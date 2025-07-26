@@ -8,7 +8,6 @@ import Features from "../components/features";
 import AboutOne from "../components/aboutOne";
 import AboutTwo from "../components/aboutTwo";
 import AiFeatures from "../components/aiFeatures";
-import Pricing from "../components/pricing";
 import Clients from "../components/clients";
 import Blogs from "../components/blogs";
 import Footer from "../components/footer";
@@ -57,7 +56,7 @@ export default function IndexThree(){
 
                     <p className="text-slate-400 max-w-xl mx-auto">Artificial intelligence makes it fast easy to create content for your blog, social media, website, and more!</p>
                 </div>
-                <Pricing/>
+                {/* <Pricing/> */}
             </div>
             <Clients/>
             <Blogs/>

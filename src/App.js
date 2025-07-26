@@ -7,7 +7,6 @@ import IndexTwo from './pages/index-two';
 import IndexThree from './pages/index-three';
 import IndexLight from './pages/index-light';
 import AboutUs from './pages/aboutus';
-import Pricing from './pages/pricing';
 import Services from './pages/services';
 import BlogDetails from './pages/blog-detail';
 import Helpcenter from './pages/helpcenter';
@@ -28,7 +27,7 @@ function App() {
       <Route path='/index-light' element={<IndexLight/>} /> */}
       <Route path='/blog' element={<Blog/>} />
       <Route path='/aboutus' element={<AboutUs/>} />
-      <Route path='/pricing' element={<Pricing/>} />
+      {/* <Route path='/pricing' element={<Pricing/>} /> */}
       <Route path='/services' element={<Services/>} />
       <Route path='/blog-detail' element={<BlogDetails/>} />
       <Route path='/blog-detail/:id' element={<BlogDetails/>} />

@@ -112,8 +112,9 @@ if (document.getElementById("navigation")) {
         <nav id="topnav" className={`${scroll ? "nav-sticky" : "" } defaultscroll is-sticky`}>
             <div className="container">
                 <Link className="logo" to="/">
-                    <img src={logoDark} className="h-6 inline-block dark:hidden" alt=""/>
-                    <img src={logoLight} className="h-6 hidden dark:inline-block" alt=""/>
+                    {/* <img src={logoDark} className="h-6 inline-block dark:hidden" alt=""/>
+                    <img src={logoLight} className="h-6 hidden dark:inline-block" alt=""/> */}
+                    DigiWorks.Ai
                 </Link>
                
                 <div className="menu-extras">
@@ -154,7 +155,6 @@ if (document.getElementById("navigation")) {
 
                 
                         <li><Link to="/aboutus" className="sub-menu-item">About Us</Link></li>
-                        <li><Link to="/pricing" className="sub-menu-item">Pricing </Link></li>
                 
                         <li className="has-submenu parent-parent-menu-item">
                             <Link to="#">Pages</Link><span className="menu-arrow"></span>
