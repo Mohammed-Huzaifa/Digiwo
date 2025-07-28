@@ -157,8 +157,8 @@ if (document.getElementById("navigation")) {
                         <li><Link to="/" className="sub-menu-item">Home</Link></li>
 
                 
-                        <li><Link to="/aboutus" className="sub-menu-item">About Us</Link></li>
-                        <li><Link to="/pricing" className="sub-menu-item">Pricing </Link></li>
+                        <li><Link to="/aboutus" className="sub-menu-item">Solutions</Link></li>
+                        {/* <li><Link to="/pricing" className="sub-menu-item">Pricing </Link></li> */}
                 
                         <li className="has-submenu parent-parent-menu-item">
                             <Link to="#">Pages</Link><span className="menu-arrow"></span>

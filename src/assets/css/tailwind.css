@@ -4242,4 +4242,37 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 .after\:w-72::after       { width: 18rem !important;          content: ""; }
 .after\:h-72::after       { height: 18rem !important;         content: ""; }
 
+.feature-glow {
+  position: relative;
+  z-index: 1;
+}
+
+.feature-glow::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(
+    to top left,
+    rgba(255, 255, 255, 0.6) 0%,         /* dominant white */
+    rgba(14, 165, 233, 0.05) 60%,        /* sky-500/5 — barely visible */
+    rgba(49, 183, 240, 0.03) 100%        /* sky-400/3 — extremely faint */
+  );
+  filter: blur(30px);                    /* light blur */
+  border-radius: 0.75rem;
+  z-index: -1;
+}
+
+
+
+.dark .feature-glow::before {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.05),   /* dim white for dark mode */
+    rgba(56, 189, 248, 0.25),
+    rgba(59, 130, 246, 0.25)
+  );
+}
+
+
+
 
