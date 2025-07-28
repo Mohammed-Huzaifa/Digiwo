@@ -56,7 +56,9 @@ export default function Index(){
                         </h4>
                         <p className="text-slate-400 text-lg max-w-xl mx-auto">Where humans and AI agents collaborate seamlessly. Boost productivity, streamline workflows, and get more done with<br/>Intelligent digital teammates that understand your business</p>
                         <div className="mt-6">
-                            <Link to="/contact" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-amber-400 hover:bg-amber-500 border-amber-400 hover:border-amber-500 text-white rounded-md">Contact Us</Link>
+                        <Link to="/contact" className="custom-button">
+  Contact Us
+</Link>
 
                             {/* <p className="text-slate-400 dark:text-white/60 text-sm mt-3">No credit card required. Free 14-days trial</p> */}
                         </div>
