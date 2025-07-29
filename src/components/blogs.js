@@ -34,14 +34,11 @@ export default function Blogs(){
                                         <Link to={`/blog-detail/${item.id}`} className="text-lg font-semibold hover:text-amber-400">{item.title}</Link>
                                     </div>
 
-                                    {/* <div className="mt-5 flex justify-between items-center">
+                                    <div className="mt-5 flex justify-between items-center">
                                         <span className="flex items-center">
-                                            <img src={item.client} className="h-7 w-7 rounded-full" alt=""/>
                                             <Link to="" className="ms-1 text-slate-400 hover:text-amber-400">{item.author}</Link>
                                         </span>
-
-                                        <span className="flex items-center"><FiCalendar className="h-4 w-4"/><span className="ms-1 text-slate-400">{item.date}</span></span>
-                                    </div> */}
+                                    </div>
                                 </div>
                             </div>
                         )
