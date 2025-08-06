@@ -76,7 +76,7 @@ export default function AmazingFeatures() {
                     {item.title}
                   </h3>
                 </div>
-                <p className="text-slate-400 mt-3">{item.desc}</p>
+                <p className="text-slate-700 mt-3 feature-p">{item.desc}</p>
               </div>
             </div>
           ))}

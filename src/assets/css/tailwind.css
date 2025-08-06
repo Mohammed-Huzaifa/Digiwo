@@ -4407,3 +4407,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 .feature-h3 {
   @apply text-black;
 }
+
+
+.feature-p {
+  @apply text-black;
+}
