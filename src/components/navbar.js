@@ -130,68 +130,18 @@ if (document.getElementById("navigation")) {
                 </div>
                 <ul className="buy-button list-none mb-0">
                     <li className="inline mb-0">
-                    <Link to="/login">
+                    {/* <Link to="/login">
   <span className="custom-login-button-outline md:inline hidden">Login</span>
   <span className="custom-login-button-solid inline md:hidden">Login</span>
-</Link>
+</Link> */}
 
                     </li>
             
                     <li className="md:inline hidden ps-1 mb-0 ">
-                        <Link to="/signup" target="_blank" className="custom-button">Signup</Link>
+                        <Link to="/contact" target="_blank" className="custom-button">Contact</Link>
                     </li>
                 </ul>
-                <div id="navigation" className={`${toggleMenu ? 'block' : ''}`}>
-                    <ul className="navigation-menu">
-                        {/* <li className="has-submenu parent-menu-item">
-                            <Link to="#">Home</Link><span className="menu-arrow"></span>
-                            <ul className="submenu">
-                                <li><Link to="/" className="sub-menu-item">Hero One</Link></li>
-                                <li><Link to="/index-two" className="sub-menu-item">Hero Two</Link></li>
-                                <li><Link to="/index-three" className="sub-menu-item">Hero Three</Link></li>
-                                <li><Link to="/index-light" className="sub-menu-item">Hero Light <span className="bg-gray-50 dark:bg-slate-800 text-[10px] shadow shadow-gray-300 dark:shadow-gray-700 font-bold px-2.5 py-0.5 rounded h-5 ms-1">Light</span></Link></li>
-                            </ul>
-                        </li> */}
-                        <li><Link to="/" className="sub-menu-item">Home</Link></li>
-
                 
-                        <li><Link to="/aboutus" className="sub-menu-item">Solutions</Link></li>
-                
-                        <li className="has-submenu parent-parent-menu-item">
-                            <Link to="#">Pages</Link><span className="menu-arrow"></span>
-                            <ul className="submenu">
-                                <li><Link to="/services" className="sub-menu-item">Services</Link></li>
-                        
-                                <li className="has-submenu parent-menu-item"><Link to="#"> Blog </Link><span className="submenu-arrow"></span>
-                                    <ul className="submenu">
-                                        <li><Link to="/blog" className="sub-menu-item"> Blogs</Link></li>
-                                        <li><Link to="/blog-detail" className="sub-menu-item"> Blog Detail</Link></li>
-                                    </ul> 
-                                </li>
-                        
-                                <li><Link to="/helpcenter" className="sub-menu-item">Helpcenter</Link></li>
-
-                                <li className="has-submenu parent-menu-item"><Link to="#"> Auth Pages </Link><span className="submenu-arrow"></span>
-                                    <ul className="submenu">
-                                        <li><Link to="/login" className="sub-menu-item"> Login</Link></li>
-                                        <li><Link to="/signup" className="sub-menu-item"> Signup</Link></li>
-                                        <li><Link to="/reset-password" className="sub-menu-item"> Forgot Password</Link></li>
-                                    </ul> 
-                                </li>
-                                <li className="has-submenu parent-menu-item"><Link to="#"> Utility </Link><span className="submenu-arrow"></span>
-                                    <ul className="submenu">
-                                        <li><Link to="/terms" className="sub-menu-item">Terms of Services</Link></li>
-                                        <li><Link to="/privacy" className="sub-menu-item">Privacy Policy</Link></li>
-                                    </ul>  
-                                </li>
-                        
-                                <li><Link to="/error" className="sub-menu-item"> 404!</Link></li>
-                            </ul>
-                        </li>
-                
-                        <li><Link to="/contact" className="sub-menu-item">Contact</Link></li>
-                    </ul>
-                </div>
             </div>
         </nav>
         </>

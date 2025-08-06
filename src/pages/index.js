@@ -1,7 +1,7 @@
 import React,{useEffect} from "react";
 import { Link } from "react-router-dom";
 
-import bannerImg from '../assets/images/classic01.png'
+import bannerImg from '../assets/images/ROBOT_IMAGE-04.png'
 
 import Navbar from "../components/navbar";
 import BrandLogo from "../components/brandLogo";
@@ -13,10 +13,13 @@ import AmazingFeatures from "../components/amazingFeatures";
 // import Pricing from "../components/pricing";
 // import Faq from "../components/Faq";
 import Blogs from "../components/blogs";
-import Footer from "../components/footer";
+// import Footer from "../components/footer";
 // import Switcher from "../components/switcher";
+import Footer2 from "../components/Footer2";
+import Footer3 from "../components/footer3";
 
 import { TypeAnimation } from 'react-type-animation';
+import Contact from "./contact";
 
 export default function Index(){
     useEffect(() => {
@@ -34,11 +37,12 @@ export default function Index(){
             <div className="container relative z-2">
                 <div className="grid grid-cols-1 text-center">
                     <div className="">
-                        <h4 className="font-bold lg:leading-normal leading-normal text-4xl lg:text-6xl mb-5">Your digital coworkers that does<br/> all your
-                            <TypeAnimation
+                    <h4 className="font-bold lg:leading-normal leading-normal text-3xl lg:text-3xl mb-5">Empowering tomorrow's workforce, Today</h4>
+                        <h2 className="font-bold lg:leading-normal leading-normal text-6xl lg:text-6xl mb-5">The future of business is 
+                        <TypeAnimation
                                 sequence={[
                                     // Same substring at the start will only be typed out once, initially
-                                    'Mundane tasks',
+                                    'AI Agents',
                                     1000, // wait 1s before replacing "Mice" with "Hamsters"
                                     '',
                                     500
@@ -50,15 +54,15 @@ export default function Index(){
                                 wrapper="span"
                                 speed={10}
                                 // className="typewrite bg-gradient-to-br from-amber-400 to-fuchsia-600 text-transparent bg-clip-text ms-4"
-                                className="typewrite bg-gradient-to-br from-blue-500 via-voilet-500 to-sky-400 text-transparent bg-clip-text ms-4"
+                                className="typewrite bg-gradient-to-br from-blue-500 via-voilet-500 to-sky-700 text-transparent bg-clip-text ms-4"
                                 repeat={Infinity}
                                 />
-                        </h4>
-                        <p className="text-slate-400 text-lg max-w-xl mx-auto">Where humans and AI agents collaborate seamlessly. Boost productivity, streamline workflows, and get more done with<br/>Intelligent digital teammates that understand your business</p>
+                        </h2>
+                        <p className="text-slate-600 text-lg max-w-xl mx-auto">Where humans and AI agents collaborate seamlessly. Boost productivity, streamline workflows, and get more done with<br/>Intelligent digital teammates that understand your business</p>
                         <div className="mt-6">
                         <Link to="/contact" className="custom-button">
-  Contact Us
-</Link>
+                            Contact Us
+                        </Link>
 
                             {/* <p className="text-slate-400 dark:text-white/60 text-sm mt-3">No credit card required. Free 14-days trial</p> */}
                         </div>
@@ -74,29 +78,21 @@ export default function Index(){
          after:-z-1 before:content-[''] before:absolute lg:before:-bottom-72 before:-bottom-56 before:end-0 before:start-0 before:mx-auto xl:before:w-[72rem] lg:before:w-[64rem] md:before:w-[48rem] before:w-[24rem] xl:before:h-[72rem] lg:before:h-[64rem] md:before:h-[48rem] before:h-[24rem] before:border-2 before:border-dashed before:border-slate-700/10 dark:before:border-slate-200/10 before:rounded-full before:-z-1"></div>
         </section>
 
-        <section className="pt-6">
+        {/* <section className="pt-6">
            <BrandLogo/>
-        </section>
+        </section> */}
 
-        <section className="relative md:py-24 py-16">
-            <Features classlist="container relative"/>
-            {/* <AboutOne/> */}
-            {/* <AboutTwo/> */}
-            <AmazingFeatures/>
-            {/* <AboutThree/> */}
+<section className="relative md:py-24 py-16">
+  <Features classlist="container relative"/>
+</section>
 
-            {/* <div className="container relative md:mt-24 mt-16">
-                <div className="grid grid-cols-1 pb-6 text-center">
-                    <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">The right plans, <br/> <span className="bg-gradient-to-br from-sky-400 via-blue-400 to-violet-500 text-transparent bg-clip-text">for the right price</span></h3>
+<section className="relative md:py-24 py-16">
+  <AmazingFeatures />
+</section>
 
-                    <p className="text-slate-400 max-w-xl mx-auto">Artificial intelligence makes it fast easy to create content for your blog, social media, website, and more!</p>
-                </div>
-                {/* <Pricing/> */}
-            {/* </div> */} 
-
-            <Blogs/>
-        </section>
-        <Footer/>
+        <Footer2 />
+        <Contact />
+        <Footer3/>
         </>
     )
 }

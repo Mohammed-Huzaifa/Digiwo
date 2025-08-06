@@ -2147,15 +2147,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 }
 #topnav .navigation-menu > li > a:hover, #topnav .navigation-menu > li > a:active{
   --tw-text-opacity: 1;
-  color: rgb(251 191 36 / var(--tw-text-opacity));
+  color: rgb(38, 62, 101 / var(--tw-text-opacity));
 }
 #topnav .navigation-menu > li:hover > a, #topnav .navigation-menu > li.active > a{
   --tw-text-opacity: 1 !important;
-  color: rgb(251 191 36 / var(--tw-text-opacity)) !important;
+  color: rgb(38, 62, 101 / var(--tw-text-opacity)) !important;
 }
 :is(.dark #topnav .navigation-menu > li:hover > a),:is(.dark  #topnav .navigation-menu > li.active > a){
   --tw-text-opacity: 1 !important;
-  color: rgb(251 191 36 / var(--tw-text-opacity)) !important;
+  color: rgb(38, 62, 101 / var(--tw-text-opacity)) !important;
 }
 #topnav .navigation-menu > li .submenu.megamenu li .megamenu-head{
   white-space: nowrap !important;
@@ -2247,13 +2247,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 }
 #topnav.scroll .navigation-menu > li:hover > a, #topnav.scroll .navigation-menu > li.active > a{
   --tw-text-opacity: 1;
-  color: rgb(251 191 36 / var(--tw-text-opacity));
+  color: rgb(38, 62, 101 / var(--tw-text-opacity));
 }
 #topnav.scroll .navigation-menu > li:hover > .menu-arrow, #topnav.scroll .navigation-menu > li.active > .menu-arrow{
   border-top-color: transparent !important;
-  border-inline-end-color: rgb(251 191 36 / var(--tw-border-opacity)) !important;
+  border-inline-end-color: rgb(38, 62, 101 / var(--tw-border-opacity)) !important;
   --tw-border-opacity: 1 !important;
-  border-bottom-color: rgb(251 191 36 / var(--tw-border-opacity)) !important;
+  border-bottom-color: rgb(38, 62, 101 / var(--tw-border-opacity)) !important;
   border-inline-start-color: transparent !important;
 }
 #topnav.defaultscroll.dark-menubar .logo{
@@ -4346,4 +4346,63 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
   border-color: #34578e;
 }
 
+/* Features section background and scoped text */
+.features-section-bg {
+  @apply w-full bg-black py-28;
+}
 
+/* Only change the heading and paragraph inside the section intro */
+.features-section-bg > .container > .text-center h3 {
+  @apply text-white;
+}
+
+.features-section-bg > .container > .text-center p {
+  @apply text-slate-300;
+}
+
+.feature-icon-title {
+  @apply flex items-center gap-4;
+}
+
+.feature-card-title {
+  @apply text-2xl font-bold text-black dark:text-white;
+}
+
+
+.feature-icon {
+  @apply inline-block w-10 h-10 flex items-center justify-center text-3xl bg-gradient-to-br from-blue-500 via-violet-500 to-sky-400 text-transparent bg-clip-text;
+}
+
+.feature-icon-title {
+  @apply flex items-center gap-4;
+}
+
+.feature-icon {
+  @apply inline-block w-10 h-10 flex items-center justify-center text-3xl bg-gradient-to-br from-blue-500 via-violet-500 to-sky-400 text-transparent bg-clip-text;
+}
+
+.feature-card-title {
+  @apply text-2xl font-bold text-black dark:text-white;
+}
+
+/* Card gradient background */
+.feature-card-gradient {
+  @apply bg-gradient-to-br from-white/30 to-white/10 dark:from-slate-800/30 dark:to-slate-800/10 backdrop-blur-lg border border-white/10 dark:border-slate-800/30;
+}
+
+/* Force spacing between icon and heading */
+.icon-title-row {
+  @apply flex items-center gap-4;
+}
+
+.feature-card-bg {
+  @apply bg-gradient-to-br from-blue-100 via-sky-200 to-sky-100 text-white rounded-lg shadow-md backdrop-blur-md bg-opacity-90 border border-white/10;
+}
+
+.feature-icon-gradient {
+  @apply text-4xl bg-gradient-to-br from-blue-500 via-violet-500 to-sky-600 text-transparent bg-clip-text;
+}
+
+.feature-h3 {
+  @apply text-black;
+}
