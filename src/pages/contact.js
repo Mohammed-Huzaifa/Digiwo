@@ -1,7 +1,7 @@
 import React,{useEffect} from "react";
 import { Link } from "react-router-dom";
 
-import contactImg from "../assets/images/contact-03.svg"
+import contactImg from "../assets/images/Contact-04.svg"
 
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
@@ -16,7 +16,7 @@ export default function Contact(){
     return(
         <>
         <Navbar/>
-        <section className="relative lg:py-24 py-16">
+        <section id="contact-section" className="relative lg:py-24 py-16">
             <div className="container">
                 <div className="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
                     <div className="lg:col-span-7 md:col-span-6">

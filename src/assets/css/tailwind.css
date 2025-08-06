@@ -45,6 +45,7 @@ html {
   -webkit-font-feature-settings: normal;
           font-feature-settings: normal; /* 5 */
   font-variation-settings: normal; /* 6 */
+  scroll-behavior: smooth;
 }
 /*
 1. Remove the margin in all browsers.

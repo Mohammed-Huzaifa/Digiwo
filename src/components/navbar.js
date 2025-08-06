@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
+
 import logoDark from '../assets/images/logo-dark.png'
 import logoLight from '../assets/images/logo-light.png'
 
@@ -114,7 +116,7 @@ if (document.getElementById("navigation")) {
                 <Link className="logo" to="/">
                     {/* <img src={logoDark} className="h-6 inline-block dark:hidden" alt=""/>
                     <img src={logoLight} className="h-6 hidden dark:inline-block" alt=""/> */}
-                    DigiWorks.Ai
+                    DigiWorks
                 </Link>
                
                 <div className="menu-extras">
@@ -138,7 +140,10 @@ if (document.getElementById("navigation")) {
                     </li>
             
                     <li className="md:inline hidden ps-1 mb-0 ">
-                        <Link to="/contact" target="_blank" className="custom-button">Contact</Link>
+                    <HashLink smooth to="/#contact-section" className="custom-button">
+  Contact
+</HashLink>
+
                     </li>
                 </ul>
                 

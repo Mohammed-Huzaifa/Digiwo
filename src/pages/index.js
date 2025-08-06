@@ -1,5 +1,7 @@
 import React,{useEffect} from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
+
 
 import bannerImg from '../assets/images/ROBOT_IMAGE-04.png'
 
@@ -60,9 +62,10 @@ export default function Index(){
                         </h2>
                         <p className="text-slate-600 text-lg max-w-xl mx-auto">Where humans and AI agents collaborate seamlessly. Boost productivity, streamline workflows, and get more done with<br/>Intelligent digital teammates that understand your business</p>
                         <div className="mt-6">
-                        <Link to="/contact" className="custom-button">
-                            Contact Us
-                        </Link>
+                        <HashLink smooth to="/#contact-section" className="custom-button">
+  Contact Us
+</HashLink>
+
 
                             {/* <p className="text-slate-400 dark:text-white/60 text-sm mt-3">No credit card required. Free 14-days trial</p> */}
                         </div>
@@ -91,8 +94,8 @@ export default function Index(){
 </section>
 
         <Footer2 />
-        <Contact />
-        <Footer3/>
+        <Contact  id="contact-section"/>
+        {/* <Footer3/> */}
         </>
     )
 }
