@@ -3,47 +3,47 @@ import React from "react";
 const featuresData = [
   {
     icon: "mdi mdi-robot",
-    title: "AI Agents",
+    title: "Learning",
     desc: "New Skills, New You",
   },
   {
     icon: "mdi mdi-message-processing-outline",
-    title: "Automated Customer Support",
+    title: "Back Office",
     desc: "Improve Your Business",
   },
   {
     icon: "mdi mdi-human-greeting-variant",
-    title: "HR Task Automation",
+    title: "Human Resource",
     desc: "Hire and Retain",
   },
   {
     icon: "mdi mdi-finance",
-    title: "Finance Assistance",
+    title: "Data Science",
     desc: "Data is Everything",
   },
   {
     icon: "mdi mdi-truck-delivery-outline",
-    title: "Logistics Coordination",
+    title: "Payroll Processing",
     desc: "On Time, Minimize Errors",
   },
   {
     icon: "mdi mdi-file-document-edit-outline",
-    title: "Content Generation",
+    title: "Sales and Marketing",
     desc: "Revenue Generation",
   },
   {
     icon: "mdi mdi-source-branch",
-    title: "Technical Task Handling",
+    title: "Finance",
     desc: "Fun & Challenging",
   },
   {
     icon: "mdi mdi-monitor-dashboard",
-    title: "Project Dashboards",
+    title: "Customer Support",
     desc: "Claims & Reimbursements",
   },
   {
     icon: "mdi mdi-account-multiple",
-    title: "CRM Updates",
+    title: "Proposals",
     desc: "RPF's & Tenders",
   },
 ];
