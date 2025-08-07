@@ -7,6 +7,9 @@
    Created: September 2023
    File: Main Css File
 */
+
+
+
 @import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap");
 /* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 */
@@ -4349,7 +4352,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 
 /* Features section background and scoped text */
 .features-section-bg {
-  @apply w-full bg-black py-28;
+  @apply w-full bg-gray-900 py-28;
 }
 
 /* Only change the heading and paragraph inside the section intro */
@@ -4397,7 +4400,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 }
 
 .feature-card-bg {
-  @apply bg-gradient-to-br from-blue-100 via-sky-200 to-sky-100 text-white rounded-lg shadow-md backdrop-blur-md bg-opacity-90 border border-white/10;
+  @apply bg-gradient-to-br from-blue-100 via-sky-50 to-sky-100 text-white rounded-lg shadow-md backdrop-blur-md bg-opacity-90 border border-white/10;
 }
 
 .feature-icon-gradient {
@@ -4411,4 +4414,60 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 
 .feature-p {
   @apply text-black;
+}
+
+.override-visible {
+  overflow: visible !important;
+  position: relative;
+  z-index: 50;
+}
+
+/* ✅ Custom hover effect for feature boxes without using @layer or @apply */
+.feature-card-hover {
+  transition: all 0.3s ease-in-out;
+  transform: translateY(0);
+}
+
+.feature-card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  border: 1px solid #91d5f2; /* Tailwind's blue-500 */
+}
+
+
+
+.custom-feature-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.icon-wrapper i {
+  font-size: 32px;
+  color: #1a7cb0; /* Tailwind indigo-600 */
+}
+
+.text-wrapper h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0f172a; /* slate-900 */
+  margin-bottom: 0.50rem;
+
+}
+
+.text-wrapper p {
+  font-size: 0.875rem;
+  color: #475569; /* slate-600 */
+  margin: 0;
+}
+
+/* Hover effect for Feature cards */
+.feature-box-hover {
+  transition: all 0.3s ease-in-out;
+  transform: translateY(0);
+}
+
+.feature-box-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }

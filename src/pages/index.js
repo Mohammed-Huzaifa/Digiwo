@@ -1,6 +1,9 @@
 import React,{useEffect} from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
+import { motion } from 'framer-motion';
+import { ArrowRight } from 'lucide-react';
+
 
 
 import bannerImg from '../assets/images/ROBOT_IMAGE-04.png'
@@ -39,15 +42,21 @@ export default function Index(){
             <div className="container relative z-2">
                 <div className="grid grid-cols-1 text-center">
                     <div className="">
-                    <h4 className="font-bold lg:leading-normal leading-normal text-3xl lg:text-3xl mb-5">Empowering tomorrow's workforce, Today</h4>
-                        <h2 className="font-bold lg:leading-normal leading-normal text-6xl lg:text-6xl mb-5">The future of business is 
+                    <h4 className="font-bold lg:leading-normal leading-normal text-3xl lg:text-3xl mb-5">Engineering Tomorrow's Workforce, Today</h4>
+                        <h2 className="font-bold lg:leading-normal leading-normal text-6xl lg:text-6xl mb-5">The Future of Business is 
                         <TypeAnimation
                                 sequence={[
                                     // Same substring at the start will only be typed out once, initially
-                                    'AI Agents',
+                                    'Digital',
                                     1000, // wait 1s before replacing "Mice" with "Hamsters"
-                                    '',
-                                    500
+                                    'Hyper Automated',
+                                    1000,
+                                    'AI Driven',
+                                    1000,
+                                    'Human-AI',
+                                    1000,
+                                    'AI Coworkers',
+                                    1000
                                     // 'Modern Teams',
                                     // 1000,
                                     // 'Social Media',
@@ -56,11 +65,13 @@ export default function Index(){
                                 wrapper="span"
                                 speed={10}
                                 // className="typewrite bg-gradient-to-br from-amber-400 to-fuchsia-600 text-transparent bg-clip-text ms-4"
-                                className="typewrite bg-gradient-to-br from-blue-500 via-voilet-500 to-sky-700 text-transparent bg-clip-text ms-4"
+                                className="typewrite bg-gradient-to-br from-blue-500 via-voilet-500 to-sky-400 text-transparent bg-clip-text ms-4"
                                 repeat={Infinity}
                                 />
                         </h2>
-                        <p className="text-slate-600 text-lg max-w-xl mx-auto">Where humans and AI agents collaborate seamlessly. Boost productivity, streamline workflows, and get more done with<br/>Intelligent digital teammates that understand your business</p>
+                        <p className="text-slate-600 text-lg max-w-xl mx-auto">DigiWorks is transforming traditional operations by integrating AI coworkers, boosting efficiency and productivity while adapting to changing market dynamics in the digital era.
+
+</p>
                         <div className="mt-6">
                         <HashLink smooth to="/#contact-section" className="custom-button">
   Contact Us
@@ -70,9 +81,76 @@ export default function Index(){
                             {/* <p className="text-slate-400 dark:text-white/60 text-sm mt-3">No credit card required. Free 14-days trial</p> */}
                         </div>
                     </div>
-                    <div className="relative mt-8 z-3">
-                        <img src={bannerImg} alt="" className="mover"/>
-                    </div>
+                    
+    
+
+
+<div
+  className="relative mt-8 z-50 w-full max-w-4xl mx-auto"
+  style={{ overflow: 'visible', position: 'relative', zIndex: 50 }}
+>
+  {/* Banner Image */}
+  <img src={bannerImg} alt="Banner" className="w-full h-auto rounded-xl" />
+
+  {/* TOP RIGHT FLOATING CARD */}
+  <motion.div
+    initial={{ y: 0 }}
+    animate={{ y: [0, -8, 0] }}
+    transition={{
+      duration: 3,
+      repeat: Infinity,
+      ease: 'easeInOut',
+    }}
+    style={{
+      position: 'absolute',
+      top: '10%',
+      right: '5%',
+      backgroundColor: '#ffffff',
+      color: '#000000',
+      padding: '16px',
+      borderRadius: '12px',
+      boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+      fontSize: '14px',
+      zIndex: 9999,
+      minWidth: '180px',
+    }}
+  >
+    <strong style={{ fontSize: '16px' }}>AI Agent Active</strong>
+    <p style={{ marginTop: '4px' }}>127 tasks running</p>
+  </motion.div>
+
+  {/* BOTTOM LEFT FLOATING CARD */}
+  <motion.div
+    initial={{ y: 0 }}
+    animate={{ y: [0, -8, 0] }}
+    transition={{
+      duration: 3.2,
+      repeat: Infinity,
+      ease: 'easeInOut',
+    }}
+    style={{
+      position: 'absolute',
+      bottom: '10%',
+      left: '5%',
+      backgroundColor: '#ffffff',
+      color: '#000000',
+      padding: '16px',
+      borderRadius: '12px',
+      boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+      fontSize: '14px',
+      zIndex: 9999,
+      minWidth: '180px',
+    }}
+  >
+    <strong style={{ fontSize: '16px' }}>Efficiency Boost</strong>
+    <p style={{ marginTop: '4px', color: '#2563eb' }}>+95% Productivity</p>
+  </motion.div>
+</div>
+
+
+
+
+
                 </div>
             </div>
             

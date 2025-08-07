@@ -5,6 +5,13 @@ import { HashLink } from 'react-router-hash-link';
 import logoDark from '../assets/images/logo-dark.png'
 import logoLight from '../assets/images/logo-light.png'
 
+import Logo from '../assets/images/logo1.jpeg';
+import Logo2 from '../assets/images/logo2.jpeg';
+import Logo3 from '../assets/images/logo3.jpeg';
+import Logo4 from '../assets/images/logo4.png';
+import Logo5 from '../assets/images/logo5.png';
+
+
 export default function Navbar(){
     const [toggleMenu, setToggleMenu] = useState(false)
     const [scroll, setScroll] = useState(false);
@@ -114,9 +121,9 @@ if (document.getElementById("navigation")) {
         <nav id="topnav" className={`${scroll ? "nav-sticky" : "" } defaultscroll is-sticky`}>
             <div className="container">
                 <Link className="logo" to="/">
-                    {/* <img src={logoDark} className="h-6 inline-block dark:hidden" alt=""/>
-                    <img src={logoLight} className="h-6 hidden dark:inline-block" alt=""/> */}
-                    DigiWorks
+                    <img src={Logo5} className="h-10 inline-block" alt=""/>
+                    {/* <img src={logoLight} className="h-6 hidden dark:inline-block" alt=""/> */}
+                    {/* DigiWorks */}
                 </Link>
                
                 <div className="menu-extras">
