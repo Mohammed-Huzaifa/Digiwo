@@ -26,7 +26,7 @@ export default function Contact(){
                     <div className="lg:col-span-5 md:col-span-6">
                         <div className="lg:ms-5">
                             <div className="bg-white dark:bg-slate-900 rounded-md shadow dark:shadow-gray-700 p-6">
-                                <h3 className="mb-6 text-2xl leading-normal font-semibold">Get in touch !</h3>
+                                <h3 className="mb-6 text-2xl leading-normal font-semibold">Get in touch with us!</h3>
 
                                 <form>
                                     <p className="mb-0" id="error-msg"></p>
@@ -34,12 +34,12 @@ export default function Contact(){
                                     <div className="grid lg:grid-cols-12 lg:gap-6">
                                         <div className="lg:col-span-6 mb-5">
                                             <label htmlFor="name" className="font-semibold">Your Name:</label>
-                                            <input name="name" id="name" type="text" className="form-input w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-amber-400 dark:border-gray-800 dark:focus:border-amber-400 focus:ring-0 mt-2" placeholder="Name :"/>
+                                            <input name="name" id="name" type="text" className="form-input w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-sky-400 dark:border-gray-800 dark:focus:border-sky-400 focus:ring-0 mt-2" placeholder="Name :"/>
                                         </div>
         
                                         <div className="lg:col-span-6 mb-5">
                                             <label htmlFor="email" className="font-semibold">Your Email:</label>
-                                            <input name="email" id="email" type="email" className="form-input w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-amber-400 dark:border-gray-800 dark:focus:border-amber-400 focus:ring-0 mt-2" placeholder="Email :"/>
+                                            <input name="email" id="email" type="email" className="form-input w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-sky-400 dark:border-gray-800 dark:focus:border-sky-400 focus:ring-0 mt-2" placeholder="Email :"/>
                                         </div>
                                     </div>
     

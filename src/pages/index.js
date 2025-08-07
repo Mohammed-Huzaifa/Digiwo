@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 
 
 
-import bannerImg from '../assets/images/ROBOT_IMAGE-04.png'
+import bannerImg from '../assets/images/banner7.png'
 
 import Navbar from "../components/navbar";
 import BrandLogo from "../components/brandLogo";
@@ -69,7 +69,7 @@ export default function Index(){
                                 repeat={Infinity}
                                 />
                         </h2>
-                        <p className="text-slate-600 text-lg max-w-xl mx-auto">DigiWorks is transforming traditional operations by integrating AI coworkers, boosting efficiency and productivity while adapting to changing market dynamics in the digital era.
+                        <p className="text-slate-600 text-lg max-w-xl mx-auto">Digiworks is transforming traditional operations by integrating AI coworkers, boosting efficiency and productivity while adapting to changing market dynamics in the digital era.
 
 </p>
                         <div className="mt-6">
@@ -90,7 +90,7 @@ export default function Index(){
   style={{ overflow: 'visible', position: 'relative', zIndex: 50 }}
 >
   {/* Banner Image */}
-  <img src={bannerImg} alt="Banner" className="w-full h-auto rounded-xl" />
+  <img src={bannerImg} alt="Banner" className="rounded-xl" style={{ width: '1100px', height: '700px'}}/>
 
   {/* TOP RIGHT FLOATING CARD */}
   <motion.div
@@ -103,9 +103,9 @@ export default function Index(){
     }}
     style={{
       position: 'absolute',
-      top: '10%',
-      right: '5%',
-      backgroundColor: '#ffffff',
+      top: '5%',
+      right: '40%',
+      backgroundColor: 'rgba(255, 255, 255, 0.60)',
       color: '#000000',
       padding: '16px',
       borderRadius: '12px',
@@ -115,36 +115,83 @@ export default function Index(){
       minWidth: '180px',
     }}
   >
-    <strong style={{ fontSize: '16px' }}>AI Agent Active</strong>
+    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+    {/* Green dot */}
+    <span
+      style={{
+        width: '10px',
+        height: '10px',
+        backgroundColor: '#22c55e', // Tailwind's green-500
+        borderRadius: '9999px',
+        display: 'inline-block',
+      }}
+    />
+    <strong style={{ fontSize: '16px', color: '#162037' }}>Coworkers Active</strong>
+  </div>
     <p style={{ marginTop: '4px' }}>127 tasks running</p>
   </motion.div>
 
   {/* BOTTOM LEFT FLOATING CARD */}
   <motion.div
-    initial={{ y: 0 }}
-    animate={{ y: [0, -8, 0] }}
-    transition={{
-      duration: 3.2,
-      repeat: Infinity,
-      ease: 'easeInOut',
-    }}
-    style={{
-      position: 'absolute',
-      bottom: '10%',
-      left: '5%',
-      backgroundColor: '#ffffff',
-      color: '#000000',
-      padding: '16px',
-      borderRadius: '12px',
-      boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
-      fontSize: '14px',
-      zIndex: 9999,
-      minWidth: '180px',
-    }}
-  >
-    <strong style={{ fontSize: '16px' }}>Efficiency Boost</strong>
+  initial={{ y: 0 }}
+  animate={{ y: [0, -8, 0] }}
+  transition={{
+    duration: 3.2,
+    repeat: Infinity,
+    ease: 'easeInOut',
+  }}
+  style={{
+    position: 'absolute',
+    bottom: '5%',
+    left: '55%',
+    backgroundColor: 'rgba(255, 255, 255, 0.60)',
+    color: '#000000',
+    padding: '16px 20px',
+    borderRadius: '16px',
+    boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+    fontSize: '14px',
+    zIndex: 9999,
+    minWidth: '220px',
+  }}
+>
+  <div>
+    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+      {/* Heading + Icon */}
+      <strong style={{ fontSize: '16px', color: '#162037' }}>Efficiency Boost</strong>
+
+      {/* Blue circular upward arrow */}
+      <div
+        style={{
+          width: '16px',
+          height: '16px',
+          borderRadius: '50%',
+          backgroundColor: '#3B82F6',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="10"
+          height="10"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="white"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M12 19V5M5 12l7-7 7 7" />
+        </svg>
+      </div>
+    </div>
+
+    {/* Subtext */}
     <p style={{ marginTop: '4px', color: '#2563eb' }}>+95% Productivity</p>
-  </motion.div>
+  </div>
+</motion.div>
+
 </div>
 
 

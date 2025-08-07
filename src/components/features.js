@@ -13,7 +13,7 @@ export default function Features() {
     {
       image: about2,
       title: "35%+ increase in team efficiency",
-      desc: "By handling routine tasks, DigiWorks AI agents empower your human team to concentrate on high-value activities, accelerating project completion and enhancing overall output."
+      desc: "By handling routine tasks, Digiworks AI agents empower your human team to concentrate on high-value activities, accelerating project completion and enhancing overall output."
     },
     {
       image: about3,
